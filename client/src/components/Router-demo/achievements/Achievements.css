@@ -1,0 +1,139 @@
+
+
+  /* Reset some basic elements to provide a consistent baseline */
+  body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Container for the achievements */
+  .articles-container {
+    padding: 2rem;
+    margin: auto;
+  }
+  
+  .articles-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    color: #333;
+  }
+  
+  /* Grid layout */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .col {
+    /* flex: 1 1 calc(33.333% - 1rem); */
+    max-width: 360px;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .img-div{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card-img-top {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    margin-top: 20px;
+  }
+  
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #007bff;
+  }
+  
+  .card-name {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+  }
+  
+  .card-text {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .custom-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .custom-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  .search {
+    flex: 1;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .filters-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  
+  /* Responsive design
+  @media (max-width: 768px) {
+    .col {
+      flex: 1 1 calc(50% - 1rem);
+      max-width: calc(50% - 1rem);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .col {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  } */
+  
