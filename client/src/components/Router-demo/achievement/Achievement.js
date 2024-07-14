@@ -5,6 +5,7 @@ import { IoCreate } from "react-icons/io5";
 import { MdDelete, MdEdit, MdRestore } from "react-icons/md";
 import { useSelector } from 'react-redux';
 import { useLocation, useNavigate } from 'react-router-dom';
+import NavigationBar from '../navigationbar/NavigationBar';
 //import { axiosWithToken } from '../../../axioswithtoken';
 import axios from 'axios';
 import './Achievement.css';
@@ -74,6 +75,9 @@ function Achievement() {
     };
 
     return (
+    <div className='home-container'>
+      <NavigationBar />
+      <div className='content'>
         <div className="achievement-container">
             {achievementEditStatus === false ? (
                 <>
@@ -192,6 +196,8 @@ function Achievement() {
                 </form>
             )}
         </div>
+      </div>
+    </div>
     );
 }
 

@@ -114,7 +114,7 @@ export default function AddArticle() {
                         <input type="file" name='image' accept='image/*' className="form-control" id="inputImage" {...register("image")} onChange={(e)=>setImage(e.target.files)} />
                     </div>
                 </div>
-                <button type="submit" className="btn btn-primary d-block mx-auto">Post</button>
+                <button type="submit" className="btn  d-block mx-auto">Post</button>
             </form>
         </div>
     );

@@ -36,7 +36,7 @@ function Register() {
         <div className='register-container'>
             <form className="form" onSubmit={handleSubmit(onSubmit)}>
                 <p className="form-title">Register</p>
-                <p className="message">Sign up now and get full access to our app.</p>
+                
 
                 {/* Display error message */}
                 {err.length !== 0 && <p className='text-danger mx-auto'>{err}</p>}
@@ -83,7 +83,7 @@ function Register() {
                     />
                     {errors.password && <span className="error-message">{errors.password.message}</span>}
                 </div>
-                <button type="submit" className="submit">Submit</button>
+                <button type="submit" className="submit">Register</button>
                 <p className="signin">Already have an account? <Link to="/">Login</Link></p>
             </form>
         </div>

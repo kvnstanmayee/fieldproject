@@ -1,4 +1,4 @@
-.footer-sec {
+/* .footer-sec {
   background-color: #333;
   color: #fff;
   padding: 40px 20px;
@@ -146,4 +146,82 @@
 
 .bottom-right a:hover {
   color: #82001a;
+} */
+
+
+.footer-sec {
+  background-color: #82001a; /* Footer background color */
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
 }
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
+  max-width: 50%;
+  text-align: left;
+}
+
+.footer-logo {
+  width: 150px; /* Adjust logo size as needed */
+}
+
+.footer-icons {
+  margin-top: 20px;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+}
+
+.footer-links-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.departments-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.departments-links a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.departments-links a:hover {
+  color: #f0f0f0; /* Link hover color */
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #5a082d; /* Separator line color */
+}
+
+.bottom-right {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.sl-credit {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #f0f0f0;
+}
+
+.sl-credit span {
+  color: white;
+}
+

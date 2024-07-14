@@ -11,7 +11,7 @@ function Main() {
             <div className='outlet'>
                 <Outlet />
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }

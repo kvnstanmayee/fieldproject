@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, Outlet, useNavigate } from 'react-router-dom';
+import NavigationBar from '../navigationbar/NavigationBar';
 import { resetState } from '../../../redux/slices/userAuthorSlice';
 import './FacultyProfile.css';
 
@@ -15,6 +16,9 @@ function FacultyProfile() {
     }
 
     return (
+        <div className='home-container'>
+      <NavigationBar />
+      <div className='content'>
         <div className="author-profile-container">
             {/* <div className="profile-header">
                 <h3 className='text-primary'>{stateObj.currentUser.username}</h3>
@@ -34,6 +38,8 @@ function FacultyProfile() {
                     <Outlet />
                 </div>
             </div>
+        </div>
+        </div>
         </div>
     );
 }
